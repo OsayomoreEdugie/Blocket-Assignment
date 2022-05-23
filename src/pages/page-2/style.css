@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue:  #2f9ef5;
+  --height: 8px;
+}
+
+body {
+  background-color: #eeee;
+}
+
+.parent {
+  height: 80vh;
+  margin: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* *****************************
+Left child container
+********************************/
+
+.left-child {
+  background-color: #f7b7bb;
+  height: 200px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+
+/* ****************************
+Middle child container
+****************************** */
+
+
+.middle-child {
+  padding-top: 10px;
+  overflow: scroll;
+  height: 400px;
+  width: 100%;
+}
+
+.container {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: #d3d3d3;
+}
+
+
+.middle-child-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 5px 0;
+  width: 100%;
+  color: #2f9ef5;
+}
+
+.middle-child-text > p {
+  color: #2f9ef5;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100px;
+}
+
+.middle-child-text > span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.progress-items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.progress-bar {
+  width: 80%;
+
+}
+
+.progress-bar-1 {
+  width: 75%;
+}
+
+.progress-bar-2 {
+  width: 60%;
+}
+
+.progress-bar-3 {
+  width: 55%;
+}
+
+.progress-bar-4 {
+  
+  width: 50%;
+  height: 8px;
+}
+.progress-bar-5 {
+ 
+  width: 45%;
+  height: 8px;
+}
+
+.progress-bar-6 {
+  width: 40%;
+}
+
+.progress-bar-7 {
+  width: 35%;
+}
+
+.progress-bar-8 {
+  width: 30%;
+}
+
+.progress-bar-9 {
+  width: 25%;
+}
+
+.progress-items > span {
+  padding-left: 3px;
+}
+
+.Prog-percentage {
+  color: #2f9ef5;
+}
+.check-item {
+  margin-right: 5px;
+}
+
+
+.middle-child-list {
+  display: flex;
+  width: 100%;
+}
+
+.label--active {
+  display: block;
+  background-color: rgb(197, 196, 196);
+
+}
+
+.progress-bar-col{
+  background-color: var(--blue);
+  height: var(--height);
+}
+
+.progress-bar--active {
+  background-color: red;
+}
+
+
+/****************************
+     Right child 
+*************************** */
+.right-child {
+  background-color: #add8e6;
+  height: 300px;
+  width: 100px;
+  margin-left: 10px;
+}
